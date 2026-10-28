@@ -1,35 +1,51 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Customer Registration</title>
+  <link rel="stylesheet" href="css/Customer.css">
 </head>
 <body>
-  <h1>Customer Registration</h1>
-  
-
-  <form action="#" method="post">
-    <label for="fullname">Full Name:</label><br>
-    <input type="text" id="fullname" name="fullname" required><br><br>
-
-    <label for="username">Username:</label><br>
-    <input type="text" id="username" name="username" required><br><br>
-
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
-
-     
-    <label for="phone number">Phone Number:</label><br>
-    <input type="tel" id="phone" name="phone"><br><br>
-
-    <label for="password">Password:</label><br>
-    <input type="password" id="password" name="password" required><br><br>
-
-    <label for="confirm_password">Confirm Password:</label><br>
-    <input type="password" id="confirm_password" name="confirm_password" required><br><br>
-
-    
-    <button type="submit">Register</button>
-    <button type="reset">Clear</button>
-  </form>
+  <header id="header">
+    <div class="logo">CineHub</div>
+    <p class="tagline">Phones, headphones &amp; accessories</p>
+  </header>
+  <nav class="navbar"><ul><li><a href="index.html">Home</a></li><li><a href="admin.html">Login</a></li><li><a href="Customer.html" class="active">Customer</a></li><li><a href="Seller_Registration.html">Seller</a></li><li><a href="Manager.html">Manager</a></li><li><a href="adminregistration.html">Admin</a></li></ul></nav>
+  <main class="form-container" id="customer-box">
+    <h1>Customer Registration</h1>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+      </div>
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required>
+      </div>
+      <div class="btn-row">
+        <button type="submit" class="btn btn-primary">Register</button>
+        <button type="reset" class="btn btn-secondary">Clear</button>
+      </div>
+    </form>
+  </main>
+  <footer id="footer">&copy; 2026 CineHub. All rights reserved.</footer>
+  <a href="#header" class="back-top">&uarr;</a>
 </body>
 </html>

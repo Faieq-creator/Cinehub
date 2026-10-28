@@ -1,29 +1,45 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Admin Login</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/admin.css">
 </head>
 <body>
-  <h1>Admin Login</h1>
-
-  <form action="#" method="post">
-    <label for="username">Username:</label><br>
-    <input type="text" id="username" name="username" required><br><br>
-
-
-    <label for="password">Password:</label><br>
-    <input type="password" id="password" name="password" required><br><br>
-    
-    <label for="UserType">UserType:</label><br><br>
-    <select id="UserType" name="UserType">
-      <option value="admin">Admin</option>
-      <option value="customer">Customer</option>
-      <option value="manager">Manager</option>
-      <option value="seller">Seller</option>
-    </select><br><br>
-
-    <button type="submit">Login</button>
-    <button type="reset">Clear</button>
-  </form>
+  <header id="header">
+    <div class="logo">CineHub</div>
+    <p class="tagline">Phones, headphones &amp; accessories</p>
+  </header>
+  <nav class="navbar"><ul><li><a href="index.html">Home</a></li><li><a href="admin.html" class="active">Login</a></li><li><a href="Customer.html">Customer</a></li><li><a href="Seller_Registration.html">Seller</a></li><li><a href="Manager.html">Manager</a></li><li><a href="adminregistration.html">Admin</a></li></ul></nav>
+  <main class="form-container" id="login-box">
+    <h1>Login</h1>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <label for="UserType">User Type:</label>
+        <select id="UserType" name="UserType">
+          <option value="admin">Admin</option>
+          <option value="customer">Customer</option>
+          <option value="manager">Manager</option>
+          <option value="seller">Seller</option>
+        </select>
+      </div>
+      <div class="btn-row">
+        <button type="submit" class="btn btn-primary">Login</button>
+        <button type="reset" class="btn btn-secondary">Clear</button>
+      </div>
+    </form>
+    <p class="form-link"><a href="Customer.html">No account? Register</a></p>
+  </main>
+  <footer id="footer">&copy; 2026 CineHub. All rights reserved.</footer>
+  <a href="#header" class="back-top">&uarr;</a>
 </body>
 </html>

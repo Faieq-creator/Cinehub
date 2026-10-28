@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seller Registration</title>
+  <link rel="stylesheet" href="css/Seller_Registration.css">
+</head>
+<body>
+  <header id="header">
+    <div class="logo">CineHub</div>
+    <p class="tagline">Phones, headphones &amp; accessories</p>
+  </header>
+  <nav class="navbar"><ul><li><a href="index.html">Home</a></li><li><a href="admin.html">Login</a></li><li><a href="Customer.html">Customer</a></li><li><a href="Seller_Registration.html" class="active">Seller</a></li><li><a href="Manager.html">Manager</a></li><li><a href="adminregistration.html">Admin</a></li></ul></nav>
+  <main class="form-container" id="seller-box">
+    <h1>Seller Registration</h1>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+      </div>
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="companyname">Company Name:</label>
+        <input type="text" id="companyname" name="companyname" required>
+      </div>
+      <div class="form-group">
+        <label for="Products">Products:</label>
+        <select id="Products" name="Products">
+          <option value="headphones">Headphones</option>
+          <option value="accessories">Accessories</option>
+          <option value="adapter">Adapter</option>
+          <option value="phones">Phones</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required>
+      </div>
+      <div class="btn-row">
+        <button type="submit" class="btn btn-primary">Register</button>
+        <button type="reset" class="btn btn-secondary">Clear</button>
+      </div>
+    </form>
+  </main>
+  <footer id="footer">&copy; 2026 CineHub. All rights reserved.</footer>
+  <a href="#header" class="back-top">&uarr;</a>
+</body>
+</html>
